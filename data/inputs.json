@@ -1,0 +1,93 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Produto excelente, chegou rapido e bem embalado. Recomendo demais!",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Veio quebrado, atendimento pessimo. Nunca mais compro nessa loja.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "Bom preco mas a qualidade do material e mediana. Nao sei se vale a pena.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Recebi o produto dentro do prazo informado.",
+      "esperado": "NEUTRO"
+    },
+    {
+      "input": "Maravilhoso! Superou todas as expectativas, ja comprei outro pra dar de presente.",
+      "esperado": "POSITIVO"
+    }
+  ],
+
+  "extracao_dados": [
+    {
+      "input": "Comprei o Smartphone Samsung A54 por R$1899,00 e a tela esta com risco profundo desde que abri a caixa.",
+      "esperado": {"produto": "Smartphone Samsung A54", "preco": "R$1899", "defeito": "risco na tela"}
+    },
+    {
+      "input": "O Liquidificador Philco LQ900 que paguei 320 reais nao liga de jeito nenhum.",
+      "esperado": {"produto": "Liquidificador Philco LQ900", "preco": "R$320", "defeito": "nao liga"}
+    },
+    {
+      "input": "Notebook Acer Aspire 5 (R$3.500) chegou com pixels mortos no canto direito da tela.",
+      "esperado": {"produto": "Notebook Acer Aspire 5", "preco": "R$3500", "defeito": "pixels mortos"}
+    },
+    {
+      "input": "Fone de ouvido JBL Tune 510BT 250 reais veio sem o cabo USB-C.",
+      "esperado": {"produto": "Fone JBL Tune 510BT", "preco": "R$250", "defeito": "sem cabo USB-C"}
+    },
+    {
+      "input": "Smart TV LG 50 polegadas R$2799 com mancha amarelada no canto inferior.",
+      "esperado": {"produto": "Smart TV LG 50 polegadas", "preco": "R$2799", "defeito": "mancha amarelada"}
+    }
+  ],
+
+  "sumarizacao_review": [
+    {
+      "input": "Comprei essa cafeteira ha um mes. O design e bonito, ocupa pouco espaco na cozinha e a entrega foi super rapida. Porem, descobri que o cafe sai morno mesmo na temperatura maxima e o reservatorio comecou a vazar agua depois de 3 usos. Estou bem decepcionado, esperava mais por esse preco.",
+      "esperado": ["cafeteira", "design", "morno", "vaza"]
+    },
+    {
+      "input": "Tenis confortavel desde o primeiro uso, parece de qualidade muito superior ao preco que paguei. Ja usei em duas corridas e nao tive nenhum desconforto. Recomendo de olhos fechados.",
+      "esperado": ["tenis", "confortavel", "qualidade"]
+    },
+    {
+      "input": "A panela ate cozinha bem, mas o cabo solta com qualquer movimento brusco. Tive medo de me queimar. Para o preco que paguei, esperava algo mais firme.",
+      "esperado": ["panela", "cabo", "solta"]
+    },
+    {
+      "input": "Mochila resistente, tem varios bolsos uteis e a aluna do meu filho adorou. O zíper principal e meio duro mas funciona. Boa relacao custo-beneficio.",
+      "esperado": ["mochila", "resistente", "zíper"]
+    },
+    {
+      "input": "Comprei o ferro de passar e na primeira semana ja apareceu um vazamento de agua bem na base. Pedi troca pelo SAC mas estou esperando ha 10 dias sem resposta.",
+      "esperado": ["ferro", "vazamento", "sac"]
+    }
+  ],
+
+  "geracao_resposta": [
+    {
+      "input": "Meu liquidificador veio sem as laminas, paguei caro nesse produto e estou indignado!",
+      "esperado": ["desculp", "lamina", "envio"]
+    },
+    {
+      "input": "Pedi um notebook ha 2 semanas e ate agora nada chegou. Ninguem me responde no chat.",
+      "esperado": ["desculp", "prazo", "rastreamento"]
+    },
+    {
+      "input": "A tv que comprei chegou com a tela trincada. Quero estorno imediato.",
+      "esperado": ["desculp", "estorno", "troca"]
+    },
+    {
+      "input": "Comprei o tenis tamanho 40 e veio o tamanho 42. Como faco a troca?",
+      "esperado": ["troca", "etiqueta", "envio"]
+    },
+    {
+      "input": "O suporte do meu monitor quebrou na primeira semana de uso. Garantia funciona?",
+      "esperado": ["garantia", "suporte tecnico", "desculp"]
+    }
+  ]
+}

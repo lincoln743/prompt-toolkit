@@ -1,0 +1,35 @@
+{
+  "_descricao": "Exemplos few-shot adicionais por tarefa. Os exemplos primarios estao em src/tasks.py (chave 'exemplos_fewshot' de cada tarefa). Este arquivo e opcional e pode ser usado para sobrescrever ou ampliar exemplos sem mexer no codigo.",
+
+  "classificacao_sentimento": [
+    {"input": "Adorei!", "output": "POSITIVO"},
+    {"input": "Pessimo, nao recomendo.", "output": "NEGATIVO"},
+    {"input": "Bom mas com defeitos.", "output": "MISTO"},
+    {"input": "Recebi conforme esperado.", "output": "NEUTRO"}
+  ],
+
+  "extracao_dados": [
+    {
+      "input": "Comprei o Notebook Dell por R$3500 e veio com pixels mortos.",
+      "output": {"produto": "Notebook Dell", "preco": "R$3500", "defeito": "pixels mortos"}
+    },
+    {
+      "input": "Fone JBL 250 reais sem o cabo.",
+      "output": {"produto": "Fone JBL", "preco": "R$250", "defeito": "sem cabo"}
+    }
+  ],
+
+  "sumarizacao_review": [
+    {
+      "input": "Cafeteira bonita, entrega rapida, mas cafe sai morno e reservatorio vaza.",
+      "output": "Cafeteira com design bonito mas que esquenta pouco e apresenta vazamentos."
+    }
+  ],
+
+  "geracao_resposta": [
+    {
+      "input": "Meu produto veio quebrado!",
+      "output": "Ola, lamentamos muito o ocorrido e pedimos sinceras desculpas. Iremos providenciar a troca imediatamente sem custo adicional. Por favor, nos confirme o melhor endereco para a coleta."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+tarefa,tecnica,input_idx,acuracia,tokens_prompt,tokens_resposta,tempo_ms,resposta
+classificacao_sentimento,zero_shot,0,1.0,125,3,27776,POSITIVO
+classificacao_sentimento,zero_shot,1,1.0,128,4,13966,NEGATIVO
+classificacao_sentimento,zero_shot,2,0.0,126,4,13894,NEUTRO
+classificacao_sentimento,zero_shot,3,1.0,118,4,12410,NEUTRO
+classificacao_sentimento,zero_shot,4,1.0,128,3,13501,POSITIVO
+classificacao_sentimento,few_shot,0,1.0,187,3,27982,POSITIVO
+classificacao_sentimento,few_shot,1,1.0,190,4,15771,NEGATIVO
+classificacao_sentimento,few_shot,2,1.0,188,4,14971,MISTO
+classificacao_sentimento,few_shot,3,1.0,180,4,12759,NEUTRO
+classificacao_sentimento,few_shot,4,1.0,190,3,15204,POSITIVO
+classificacao_sentimento,chain_of_thought,0,1.0,213,4,33843,POSITIVO
+classificacao_sentimento,chain_of_thought,1,0.0,216,4,33795,NEUTRO
+classificacao_sentimento,chain_of_thought,2,0.0,214,4,33570,NEUTRO
+classificacao_sentimento,chain_of_thought,3,1.0,206,4,31382,NEUTRO
+classificacao_sentimento,chain_of_thought,4,1.0,216,4,33891,POSITIVO
+classificacao_sentimento,role_prompting,0,1.0,238,3,49508,POSITIVO
+classificacao_sentimento,role_prompting,1,1.0,241,4,16879,NEGATIVO
+classificacao_sentimento,role_prompting,2,0.0,239,4,16275,NEUTRO
+classificacao_sentimento,role_prompting,3,1.0,231,4,14021,NEUTRO
+classificacao_sentimento,role_prompting,4,1.0,241,3,17015,POSITIVO
+extracao_dados,zero_shot,0,0.3333333333333333,143,75,48686,"```json
+{
+  ""produto"": ""Smartphone Samsung A54"",
+  ""preco"": 1899.00,
+  ""defeito"": ""Tela com risco profundo""
+}
+```
+
+Essa resposta está no formato JSON solicitado, contendo as informações do produto, pr"
+extracao_dados,zero_shot,1,0.6666666666666666,136,35,25047,"```json
+{""produto"": ""Liquidificador Philco LQ900"", ""preco"": 320, ""defeito"": ""Nao liga""}
+```"
+extracao_dados,zero_shot,2,0.3333333333333333,139,70,37780,"```json
+{
+  ""produto"": ""Notebook Acer Aspire 5"",
+  ""preco"": 3500,
+  ""defeito"": ""Pixels mortos no canto direito da tela""
+}
+```
+
+Essa resposta está em formato JSON e contém as informações solicitadas: p"
+extracao_dados,zero_shot,3,0.0,134,39,27602,"```json
+{""produto"": ""Fone de ouvido JBL Tune 510BT"", ""preco"": 250, ""defeito"": ""cabo USB-C""}
+```"
+extracao_dados,zero_shot,4,0.3333333333333333,134,66,36079,"```json
+{
+  ""produto"": ""Smart TV LG 50 polegadas"",
+  ""preco"": 2799,
+  ""defeito"": ""Mancha amarelada no canto inferior""
+}
+```
+
+Essa resposta está em formato JSON, com os campos solicitados preenchidos."
+extracao_dados,few_shot,0,0.3333333333333333,248,48,62228,"```json
+{""produto"": ""Smartphone Samsung A54"", ""preco"": ""R$1899,00"", ""defeito"": ""tela com risco profundo desde que abri a caixa""}
+```"
+extracao_dados,few_shot,1,0.6666666666666666,241,46,35277,"```json
+{""produto"": ""Liquidificador Philco LQ900"", ""preco"": ""R$320"", ""defeito"": ""n\u00e3o liga de jeito nenhum""}
+```"
+extracao_dados,few_shot,2,0.0,244,45,36310,"```json
+{""produto"": ""Notebook Acer Aspire 5"", ""preco"": ""R\$3.500"", ""defeito"": ""pixels mortos no canto direito da tela""}
+```"
+extracao_dados,few_shot,3,0.6666666666666666,239,41,33377,"```json
+{""produto"": ""Fone de ouvido JBL Tune 510BT"", ""preco"": ""R$250"", ""defeito"": ""sem cabo USB-C""}
+```"
+extracao_dados,few_shot,4,0.6666666666666666,239,44,34642,"```json
+{""produto"": ""Smart TV LG 50 polegadas"", ""preco"": ""R$2799"", ""defeito"": ""mancha amarelada no canto inferior""}
+```"
+extracao_dados,chain_of_thought,0,0.0,233,69,148197,"```json
+{
+  ""produto"": ""Samsung A54"",
+  ""preco"": ""R$1899,00"",
+  ""defeito"": ""Tela com risco profundo""
+}
+```
+
+Espero que isso esteja correto. Se precisar de mais ajuda, basta perguntar!"
+extracao_dados,chain_of_thought,1,0.0,226,190,200614,"Para resolver esse problema, vamos seguir os passos abaixo:
+
+1. Localize o nome do produto na mensagem: O produto mencionado é ""Liquidificador Philco LQ900"".
+2. Localize o preco mencionado (com ou sem"
+extracao_dados,chain_of_thought,2,0.0,229,224,217756,"Para responder corretamente ao problema apresentado, siga os passos abaixo:
+
+1. **Localize o nome do produto na mensagem**: O nome do produto é ""Notebook Acer Aspire 5"".
+2. **Localize o preco menciona"
+extracao_dados,chain_of_thought,3,0.0,224,180,197961,"Para responder ao seu pedido, vamos seguir os passos abaixo:
+
+1. Localize o nome do produto na mensagem: O nome do produto é ""JBL Tune 510BT"".
+2. Localize o preco mencionado (com ou sem R$): O preco m"
+extracao_dados,chain_of_thought,4,0.0,224,211,214705,"Para resolver esse problema, vamos seguir os passos abaixo:
+
+1. Localize o nome do produto na mensagem: O nome do produto é ""Smart TV LG 50 polegadas"".
+2. Localize o preco mencionado (com ou sem R$): "
+extracao_dados,role_prompting,0,0.3333333333333333,248,34,74583,"{""produto"": ""Smartphone Samsung A54"", ""preco"": 1899.0, ""defeito"": ""Risco profundo na tela""}"
+extracao_dados,role_prompting,1,0.3333333333333333,241,36,35516,"{""produto"": ""Liquidificador Philco LQ900"", ""preco"": 320, ""defeito"": ""Nao liga de jeito nenhum""}"
+extracao_dados,role_prompting,2,0.3333333333333333,244,41,37732,"{""produto"": ""Notebook Acer Aspire 5"", ""preco"": ""R$3.500"", ""defeito"": ""pixels mortos no canto direito da tela""}"
+extracao_dados,role_prompting,3,0.0,239,37,34473,"{""produto"": ""Fone de ouvido JBL Tune 510BT"", ""preco"": ""250"", ""defeito"": ""cabo USB-C ausente""}"
+extracao_dados,role_prompting,4,0.6666666666666666,239,40,36978,"{""produto"": ""Smart TV LG 50 polegadas"", ""preco"": ""R$2799"", ""defeito"": ""mancha amarelada no canto inferior""}"
+sumarizacao_review,zero_shot,0,0.25,172,28,48409,"Comprei uma cafeteira de boa qualidade, mas o desempenho é deficiente e o preço não justifica."
+sumarizacao_review,zero_shot,1,0.6666666666666666,138,25,28213,"Tenis confortável desde o primeiro uso, qualidade superior ao preço pago, recomendo de olhos fechados."
+sumarizacao_review,zero_shot,2,1.0,135,29,28798,"A panela é eficiente, mas o cabo solta e não é firme, causando medo de queimaduras."
+sumarizacao_review,zero_shot,3,1.0,135,30,29758,"Mochila resistente, varios bolsos úteis, boa relação custo-benefício, zíper principal um pouco duro."
+sumarizacao_review,zero_shot,4,1.0,133,24,27303,O ferro apresenta vazamento de água desde a primeira semana após compra e falta troca pelo SAC.
+sumarizacao_review,few_shot,0,0.75,289,27,76552,"Cafeteira bonita e rápida, mas cafe morno e reservatório que vaza após poucos usos."
+sumarizacao_review,few_shot,1,1.0,255,20,31458,"Tenis confortavel e de qualidade superior ao preco pago, recomendado sem hesitação."
+sumarizacao_review,few_shot,2,1.0,252,22,31322,"Panela cozinha bem, mas cabo solta e frágil, não é firme."
+sumarizacao_review,few_shot,3,0.6666666666666666,252,22,32401,"Mochila resistente com varios bolsos uteis, boa relação custo-benefício."
+sumarizacao_review,few_shot,4,0.6666666666666666,250,18,29173,Ferro de passar com vazamento de água na base após uma semana.
+sumarizacao_review,chain_of_thought,0,0.5,251,22,60138,A cafeteira não atende às expectativas do cliente devido problemas com temperatura e vazamento.
+sumarizacao_review,chain_of_thought,1,0.6666666666666666,217,17,48489,"Tenis confortável e de qualidade superior, recomendado sem hesitação."
+sumarizacao_review,chain_of_thought,2,1.0,214,33,54841,"A panela é eficiente na cozinha, mas o cabo solta com movimentos bruscos, causando medo de queimaduras."
+sumarizacao_review,chain_of_thought,3,1.0,214,35,53072,"Mochila resistente com vários bolsos úteis, boa relação custo-benefício, embora o zíper principal seja um pouco duro."
+sumarizacao_review,chain_of_thought,4,0.6666666666666666,212,20,48134,Ferro de passar com defeito de vazamento na base após pouca utilização.
+sumarizacao_review,role_prompting,0,0.5,285,27,84115,"Estou decepcionado com o desempenho da cafeteira, especialmente com o problema de temperatura e vazamento."
+sumarizacao_review,role_prompting,1,0.3333333333333333,251,16,30484,O cliente está muito satisfeito com o confort e qualidade do produto.
+sumarizacao_review,role_prompting,2,0.6666666666666666,248,24,31518,"A panela é eficiente, mas o cabo solto causa preocupação de segurança para o preço pago."
+sumarizacao_review,role_prompting,3,1.0,248,30,35292,"Mochila resistente e prática, boa relação custo-benefício, embora o zíper principal seja um pouco duro."
+sumarizacao_review,role_prompting,4,0.6666666666666666,246,33,35087,O cliente está insatisfeito com o ferro de passar que apresentou um vazamento de água após uma semana e não recebeu troca.
+geracao_resposta,zero_shot,0,0.6666666666666666,162,92,71629,"Olá, lamentamos que você tenha recebido seu liquidificador sem as laminas. Pedimos desculpas pelo inconveniente e entendemos sua indignação. Estamos dispostos a oferecer uma solução concreta: troca do"
+geracao_resposta,zero_shot,1,0.3333333333333333,161,76,46396,"Olá, lamentamos atrasos na entrega do seu pedido. Pedimos desculpas pelo problema e estamos trabalhando para resolver isso imediatamente. Vamos oferecer uma troca por um novo notebook ou um estorno do"
+geracao_resposta,zero_shot,2,0.6666666666666666,159,62,41059,Lamento muito pelo problema que você está enfrentando com a sua TV. Pedimos desculpas por qualquer inconveniente causado e estamos dispostos a ajudar. Estamos preparando um estorno imediato para compe
+geracao_resposta,zero_shot,3,0.3333333333333333,161,94,53906,"Olá, estamos muito desolados saber que você recebeu um tamanho incorreto do seu tenis. Pedimos desculpas pelo inconveniente e gostaríamos de ajudar a resolver o problema. Por favor, entre em contato c"
+geracao_resposta,zero_shot,4,0.6666666666666666,157,83,48617,"Olá, estamos muito desolados saber que seu monitor quebrou na primeira semana de uso. Pedimos desculpas pelo inconveniente e gostaríamos de ajudar a encontrar uma solução. Estamos considerando uma tro"
+geracao_resposta,few_shot,0,0.3333333333333333,259,80,81259,"Lamentamos muito o ocorrido com seu liquidificador. Pedimos desculpas pelo transtorno e estamos dispostos a efetuar uma troca ou estorno integral para compensar a inconveniência causada. Por favor, en"
+geracao_resposta,few_shot,1,0.3333333333333333,258,81,56602,Olá! Lamentamos muito o atraso na entrega do seu notebook. Pedimos desculpas pelo transtorno e vamos investigar imediatamente para entender o que aconteceu. Vamos enviar um suporte técnico para ajudá-
+geracao_resposta,few_shot,2,0.6666666666666666,256,67,51211,Lamento muito pelo problema com sua TV. Pedimos desculpas pelo transtorno e vamos proceder imediatamente ao estorno integral da compra. Vamos enviar um suporte técnico para resolver o problema da tela
+geracao_resposta,few_shot,3,0.3333333333333333,258,73,52544,"Olá! Lamentamos muito o ocorrido com seu tenis. Pedimos desculpas pelo transtorno e já iremos providenciar a troca do tamanho correto em até 3 dias úteis. Caso prefira, podemos efetuar o estorno integ"
+geracao_resposta,few_shot,4,0.3333333333333333,254,76,52582,Lamento muito o ocorrido com seu monitor. Pedimos desculpas pelo transtorno e estamos dispostos a oferecer suporte técnico para ajudar a resolver o problema. Vamos enviar um técnico para reparo em sua
+geracao_resposta,chain_of_thought,0,0.6666666666666666,266,85,87965,"""Prezado cliente, lamentamos que seu liquidificador tenha chegado sem as laminas e entendemos sua indignação. Pedimos desculpas por esse erro e estamos dispostos a oferecer uma solução concreta: troca"
+geracao_resposta,chain_of_thought,1,0.3333333333333333,265,99,93083,"Olá, estamos muito desolados saber que você ainda não recebeu seu notebook após duas semanas de espera. Pedimos desculpas pelo inconveniente e entendemos sua frustração. Estamos dispostos a ajudar e p"
+geracao_resposta,chain_of_thought,2,1.0,263,101,95103,"Claro! Aqui está a resposta do SAC:
+
+""Lamento muito que a tela da sua TV esteja trincada e não atenda às suas expectativas. Pedimos desculpas por esse inconveniente e estamos dispostos a ajudar. Como "
+geracao_resposta,chain_of_thought,3,0.3333333333333333,265,92,90048,"Olá! Lamento saber que o seu tenis não atendeu às suas expectativas. Pedimos desculpas pelo inconveniente e estamos aqui para ajudar. Para resolver isso, gostaríamos de oferecer uma troca do produto p"
+geracao_resposta,chain_of_thought,4,0.0,261,36,63585,"Olá, gostaria de saber mais sobre o problema que está enfrentando com seu monitor. Pode me contar mais detalhes sobre o problema que está ocorrendo?"
+geracao_resposta,role_prompting,0,0.6666666666666666,305,91,164541,Lamento muito que você tenha recebido seu liquidificador sem as laminas. Pedimos desculpas pelo inconveniente e entendemos sua indignação. Vamos oferecer uma solução: podemos trocar o produto por um n
+geracao_resposta,role_prompting,1,0.6666666666666666,304,102,70080,"Olá, entendo que você está preocupado com a falta de entrega do seu notebook há 2 semanas. Pedimos desculpas pelo inconveniente e estamos trabalhando para resolver isso o mais rápido possível. Vamos a"
+geracao_resposta,role_prompting,2,0.6666666666666666,302,81,61765,"Lamento muito que sua tv tenha chegado com a tela trincada. Pedimos desculpas pelo inconveniente e estamos dispostos a ajudar. Para resolver o problema, gostaria de oferecer uma troca pela nova tv sem"
+geracao_resposta,role_prompting,3,0.3333333333333333,304,82,59906,"Olá, obrigado por ter entrado em contato conosco. Lamento que você tenha recebido um tamanho diferente do que havia comprado. Estamos dispostos a ajudar e oferecemos uma troca imediata pelo produto co"
+geracao_resposta,role_prompting,4,0.6666666666666666,300,78,58208,"Olá, entendo que você está preocupado com o problema do seu monitor. Pedimos desculpas pelo inconveniente e estamos aqui para ajudar. Vamos verificar a garantia do produto e avaliar as opções de troca"

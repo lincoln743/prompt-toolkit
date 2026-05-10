@@ -1,0 +1,13 @@
+{
+  "_descricao": "Templates de prompt reutilizaveis. O construtor padrao em src/prompt_builder.py monta a anatomia (instrucao + contexto + input + formato). Estes templates servem como ponto de partida ou customizacao por tarefa.",
+
+  "anatomia_padrao": "### INSTRUCAO\n{instrucao}\n\n### INPUT\n{input}\n\n### FORMATO DE SAIDA\n{formato}\n\n### RESPOSTA",
+
+  "few_shot_padrao": "### INSTRUCAO\n{instrucao}\n\n### EXEMPLOS\n{exemplos}\n\n### INPUT\n{input}\n\n### FORMATO DE SAIDA\n{formato}\n\n### RESPOSTA",
+
+  "cot_padrao": "### INSTRUCAO\n{instrucao}\n\n### INPUT\n{input}\n\n### RACIOCINIO PASSO A PASSO\n{passos}\n\n### FORMATO DE SAIDA\n{formato}\n\n### RESPOSTA",
+
+  "rotulos_classificacao": ["POSITIVO", "NEGATIVO", "NEUTRO", "MISTO"],
+
+  "campos_extracao": ["produto", "preco", "defeito"]
+}
